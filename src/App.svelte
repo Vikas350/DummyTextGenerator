@@ -27,7 +27,7 @@
   }
 
   // function for validating the count and option
-  function validateValues(){
+  function validateValues(e){
     // if select word
     if(optionSelected === "words"){
       tempCount = count; // store count and option in temp value
@@ -183,7 +183,7 @@
           <div class="input2">
             <!-- <label for="gen_option">Select Type</label> -->
             <select name="gen_option" class="form-control" placeholder="Select Type" bind:value={optionSelected}>
-              <option value="words">Select the Type</option>
+              <option value="" disabled selected>Select Type</option>
               <option value="words">Words</option>
               <option value="sentences">Sentences</option>
               <option value="paras">Paragraphs</option>
@@ -385,7 +385,7 @@ input {
   font-family: 'Noto Sans', sans-serif;
   margin-top: 15rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 1em auto;
   width: 60%;
@@ -398,7 +398,7 @@ input {
 .input-div form{
   display: flex;
   flex-direction:row;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 #gen-form{
@@ -451,6 +451,10 @@ input {
   padding-left: 3.5rem;
   
   padding-right: 3rem;
+
+  padding-top: 1rem;
+
+  padding-bottom: 1rem;
   
 }
 
@@ -524,16 +528,16 @@ select {
    display: flex;
    width: 220px;
    height: 2.2em;
-   line-height: 3;
+   /* line-height: 3; */
    background: #5c6664;
-   overflow: hidden;
-   border-radius: .25em;
+   /* overflow: hidden; */
+   border-radius: 8px;
 }
 .input2::after {
-   content: '\25BC';
+   /* content: '\25BC'; */
    position: absolute;
-   top: 0;
-   right: 0;
+   /* top: 0; */
+   /* right: 0; */
    padding: 0 1em;
    padding-bottom: 2em;
    background: #2b2e2e;
@@ -541,8 +545,46 @@ select {
    pointer-events:none;
    transition:.25s all ease;
 }
-.input2:hover::after {
+.input2:hover{
   color: rgb(252, 166, 170);
+}
+
+@media screen and (max-width: 768px){
+    .input1{
+      width:120px;
+    }
+    .input2{
+      width:120px;
+
+    }
+    .input-nav{
+        /* -ms-flex-wrap: wrap; */
+            flex-wrap: wrap;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 80%;
+    }
+    #copy-btn{
+        margin-top: 2rem;
+    }
+    #gen-btn{
+      font-size: 20px;
+      margin:auto;
+
+    }
+    .text-body{
+      width: 90%;
+    }
+    .text-body #text-content{
+     font-size: 0.7rem;
+  
+    }
+    #text-content{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 }
 
 </style>

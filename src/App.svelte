@@ -9,13 +9,13 @@
   // const genValue = document.getElementById('gen_count');
 
   //initialize variables--> count,type
-  let count = 0;
-  let optionSelected = "type";
+  let count;
+  let optionSelected;
   let tempOption = "";
   let tempCount = 0;
 
   // on click generate text 
-  function onClick(e){
+  function onClick(){
     // console.log(count,optionSelected);
 
     // validate values
@@ -138,9 +138,10 @@
     </nav>
     <div class="gradient">
       <section class="section1" style="border: 20px;">
-        <div class="home-body"></div>
-        <div class="side-text">
-          <h1>Lorem ipsum</h1><h4>is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h4>
+        <div class="home-body">
+          <div class="side-text">
+            <h1>Lorem ipsum</h1><h4>is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h4>
+          </div>
         </div>
         <div class="side-below">
           <h2><span class="auto-type"></span></h2>
@@ -182,6 +183,7 @@
           <div class="input2">
             <!-- <label for="gen_option">Select Type</label> -->
             <select name="gen_option" class="form-control" placeholder="Select Type" bind:value={optionSelected}>
+              <option value="words">Select the Type</option>
               <option value="words">Words</option>
               <option value="sentences">Sentences</option>
               <option value="paras">Paragraphs</option>
@@ -321,45 +323,50 @@ input {
 
 
 .home-body {
-  background-image: url(src/Images/20827476_Tiny\ characters\ sitting\ on\ laptop\ with\ lorem\ ipsum\ title.jpg);
-  height: 80vh;
-  background-color: white;
-  background-size:contain;
-  background-repeat: no-repeat;
+  /* background-image: url(src/Images/20827476_Tiny\ characters\ sitting\ on\ laptop\ with\ lorem\ ipsum\ title.jpg); */
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
   border: 20px;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 2px 5px 5px rgba(16, 24, 40, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .side-text{
   /* border: 4px solid red; */
   position:absolute;
-  height: 246px;
-  width: 579px;
-  top: 200px;
-  right: 150px;
+  height: 20vw;
+  width: 50vw;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .side-text h1{
-  font-size: 100px;
+  font-size: 7vw;
   color: rgb(27, 26, 26);
   /* bottom right color  */
   text-shadow: 2px 2px #72afec; 
 }
 
 .side-text h4{
-  font-size: 20px;
+  font-size: 1.5vw;
   font-family:monospace;
   color: rgb(69, 67, 67);
 }
 
 .side-below{
-  position: absolute;
-  top: 400px;
-  right: 500px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .side-below h2{
@@ -390,8 +397,8 @@ input {
 
 .input-div form{
   display: flex;
-  flex-direction: row;
-  
+  flex-direction:row;
+  overflow:hidden;
 }
 
 #gen-form{

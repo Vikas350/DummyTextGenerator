@@ -324,7 +324,7 @@ input {
 
 .home-body {
   /* background-image: url(src/Images/20827476_Tiny\ characters\ sitting\ on\ laptop\ with\ lorem\ ipsum\ title.jpg); */
-  height: 50vh;
+  height: 45vh;
   background-color: rgb(255, 255, 255);
   border: 20px;
   margin: auto;

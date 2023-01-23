@@ -140,7 +140,8 @@
       <section class="section1" style="border: 20px;">
         <div class="home-body">
           <div class="side-text">
-            <h1>Lorem ipsum</h1><h4>is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h4>
+            <h1>Lorem ipsum</h1><h4>is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h4><br><hr><br>
+            <h4 style="color:red">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</h4>
           </div>
         </div>
         <div class="side-below">
@@ -341,8 +342,8 @@ input {
 .side-text{
   /* border: 4px solid red; */
   position:absolute;
-  height: 20vw;
-  width: 50vw;
+  height: 40%;
+  width: 40%;
   margin:auto;
   align-items: center;
   justify-content: center;
@@ -350,14 +351,14 @@ input {
 }
 
 .side-text h1{
-  font-size: 7vw;
+  font-size: 80px;
   color: rgb(27, 26, 26);
   /* bottom right color  */
   text-shadow: 2px 2px #72afec; 
 }
 
 .side-text h4{
-  font-size: 1.5vw;
+  font-size: 20px;
   font-family:monospace;
   color: rgb(69, 67, 67);
 }
@@ -586,8 +587,23 @@ select {
       padding-right: 1rem;
     }
     .nav-bar span{
-      font-size:40px;
+      font-size:35px;
     }
+    .nav-bar span p{
+      font-size: 12px;
+    }
+    .side-text{
+      height: 35%;
+      width:80%;
+      line-height: 1.5;
+    }
+    .side-text h1{
+      font-size: 40px;
+    }
+    .side-text h4{
+      font-size: 12px;
+    }
+    
 }
 
 </style>

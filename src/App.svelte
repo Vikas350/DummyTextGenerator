@@ -118,9 +118,9 @@
     navigator.clipboard.writeText(texts);
   }
 
-  
 
-  
+
+
 </script>
 
 <main>
@@ -201,7 +201,7 @@
       <div class="button-bar">
         <button type="button" id="copy-btn" class="btn" on:click={copyToClipboard}>Copy Text</button>
       </div>
-      
+
     </section>
   </body>
 </main>

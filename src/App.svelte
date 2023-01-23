@@ -598,10 +598,10 @@ select {
       line-height: 1.5;
     }
     .side-text h1{
-      font-size: 40px;
+      font-size: 30px;
     }
     .side-text h4{
-      font-size: 12px;
+      font-size: 10px;
     }
     
 }

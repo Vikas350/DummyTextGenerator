@@ -488,7 +488,7 @@ button:hover {
   width: 70%;
   margin: auto;
   display: flex;
-  justify-content: end;
+  justify-content:center;
 }
 
 .button-bar button {
@@ -584,6 +584,9 @@ select {
     #text-content{
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+    .nav-bar span{
+      font-size:40px;
     }
 }
 

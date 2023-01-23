@@ -594,14 +594,20 @@ select {
     }
     .side-text{
       height: 35%;
-      width:80%;
+      width:60%;
       line-height: 1.5;
     }
     .side-text h1{
-      font-size: 30px;
+      font-size: 25px;
     }
     .side-text h4{
-      font-size: 10px;
+      font-size: 8px;
+    }
+    .home-body{
+      box-shadow: 2px 3px 5px 5px rgba(16, 24, 40, 0.05);
+      margin:auto;
+      align-items: center;
+      justify-content: center;
     }
     
 }

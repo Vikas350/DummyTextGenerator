@@ -592,6 +592,12 @@ select {
     .nav-bar span p{
       font-size: 12px;
     }
+    .nav-bar .image{
+      height:40px;
+      width:40px;
+      margin-top: 1rem;
+      margin-left: 0.1rem;
+    }
     .side-text{
       height: 35%;
       width:60%;
